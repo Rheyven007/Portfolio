@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("portfolio-theme", theme);
     };
     const savedTheme = localStorage.getItem("portfolio-theme");
-    applyTheme(savedTheme || (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark"));
+    applyTheme(savedTheme || "light");
     themeToggle?.addEventListener("click", () => {
         applyTheme(html.dataset.theme === "light" ? "dark" : "light");
     });
@@ -179,6 +179,21 @@ document.addEventListener("DOMContentLoaded", () => {
             el.addEventListener("mouseleave", () => el.style.transform = "");
         });
     }
+
+    /* Static Vercel contact form: prepare a mailto message without PHP. */
+    document.querySelector("[data-static-contact]")?.addEventListener("submit", event => {
+        event.preventDefault();
+        const form = event.currentTarget;
+        const name = form.querySelector('[name="name"]')?.value.trim() || "";
+        const email = form.querySelector('[name="email"]')?.value.trim() || "";
+        const subject = form.querySelector('[name="subject"]')?.value.trim() || "Portfolio inquiry";
+        const message = form.querySelector('[name="message"]')?.value.trim() || "";
+        const directEmail = document.querySelector('.contact-title .text-link')?.href || "mailto:bausasrheyven@gmail.com";
+        const recipient = directEmail.replace(/^mailto:/i, "").split("?")[0];
+        const body = `Name: ${name}\nEmail: ${email}\n\n${message}`;
+        const mailto = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.location.href = mailto;
+    });
 
     /* Keyboard */
     document.addEventListener("keydown", e => {
