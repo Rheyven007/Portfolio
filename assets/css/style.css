@@ -379,7 +379,7 @@ body.cursor-hover .cursor-ring {
   bottom: 0;
   width: 100%;
   height: 78%;
-  border: 1px dashed #3a3a3a;
+ 
   display: flex;
   align-items: center;
   justify-content: center;
