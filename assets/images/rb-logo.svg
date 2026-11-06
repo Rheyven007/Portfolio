@@ -1,1 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title desc"><title id="title">RB monogram</title><desc id="desc">Minimal R and B monogram for Rheyven Bausas.</desc><rect width="120" height="120" rx="24" fill="#111"/><path d="M28 88V32h23c14 0 23 7 23 19 0 8-4 14-11 17l15 20H62L50 71h-9v17H28Zm13-29h9c7 0 11-3 11-8s-4-8-11-8h-9v16Z" fill="#fff"/><path d="M76 32h13c12 0 19 6 19 15 0 5-2 9-7 12 6 3 9 7 9 13 0 10-8 16-21 16H76V32Zm12 23h2c4 0 7-2 7-6s-3-6-7-6h-2v12Zm0 24h3c5 0 8-2 8-6s-3-6-8-6h-3v12Z" fill="#fff"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 108" role="img" aria-labelledby="title desc">
+  <title id="title">RB geometric monogram</title>
+  <desc id="desc">Custom angular RB monogram with a swept crown, open diagonal cuts, and one connected base. Transparent background.</desc>
+  <style>.rb-mark{fill:#151515}@media(prefers-color-scheme:dark){.rb-mark{fill:#fff;filter:url(#rb-glow)}}</style>
+  <defs><filter id="rb-glow" x="-15%" y="-20%" width="130%" height="140%" color-interpolation-filters="sRGB"><feDropShadow dx="0" dy="0" stdDeviation=".7" flood-color="#fff" flood-opacity=".18"/></filter></defs>
+  <!-- Hand-built connected silhouette; no bitmap, background panel, or font glyphs. -->
+  <g class="rb-mark" fill="#151515">
+    <path id="rb-monogram" d="M12 16H65L76 27L61 42H45L72 75L66 65H83L88 59L85 56H65L63 62L58 55L61 49H84L89 43L86 40H70L81 29H94L107 43L97 54L107 65L95 79H53L36 91L50 72L58 77L33 48L12 69L25 37H57L64 29H24Z"/>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 108" role="img" aria-labelledby="title desc">
+  <title id="title">RB geometric monogram</title>
+  <desc id="desc">Custom angular RB monogram with a swept crown, open diagonal cuts, and one connected base. Transparent background.</desc>
+  
+  <defs><filter id="rb-glow" x="-15%" y="-20%" width="130%" height="140%" color-interpolation-filters="sRGB"><feDropShadow dx="0" dy="0" stdDeviation=".7" flood-color="#fff" flood-opacity=".18"/></filter></defs>
+  <!-- Hand-built connected silhouette; no bitmap, background panel, or font glyphs. -->
+  <g class="rb-mark" fill="#fff" filter="url(#rb-glow)">
+    <path id="rb-monogram" d="M12 16H65L76 27L61 42H45L72 75L66 65H83L88 59L85 56H65L63 62L58 55L61 49H84L89 43L86 40H70L81 29H94L107 43L97 54L107 65L95 79H53L36 91L50 72L58 77L33 48L12 69L25 37H57L64 29H24Z"/>
+  </g>
+</svg>
