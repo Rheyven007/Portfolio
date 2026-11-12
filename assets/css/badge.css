@@ -1,0 +1,79 @@
+.badge-stage { position: relative; z-index: 15; height: 610px; width: 100%; min-width: 0; overflow: visible; }
+.badge-stage-note { position: absolute; top: 36px; right: 0; font-size: 8px; color: var(--muted); letter-spacing: .12em; writing-mode: vertical-rl; }
+.badge-orbit { position: absolute; width: min(95%, 460px); aspect-ratio: 1; border: 1px solid var(--soft-rule); border-radius: 50%; left: 50%; top: 90px; transform: translateX(-50%); opacity: .65; }
+.badge-orbit::after { content: ''; position: absolute; inset: 32px; border: 1px dashed var(--soft-rule); border-radius: 50%; }
+.badge-lanyard { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
+.badge-lanyard path { fill: none; stroke-linecap: butt; }
+.lanyard-edge { stroke: #737373; stroke-width: 30px; filter: drop-shadow(2px 4px 3px #0003); }
+.lanyard-fabric { stroke: #101010; stroke-width: 27px; }
+.lanyard-seam { stroke: #b7b7b7; stroke-width: 24px; stroke-dasharray: 2 3; }
+.lanyard-inner { stroke: #101010; stroke-width: 22px; }
+.lanyard-weave { stroke: #ffffff0d; stroke-width: 20px; stroke-dasharray: .5 2; }
+.lanyard-strap-left .lanyard-fabric, .lanyard-strap-left .lanyard-inner { stroke: #1d1d1d; }
+.lanyard-strap-left .lanyard-name { fill: #f0f0f0; }
+.lanyard-name { fill: #fff; font: 700 7.5px var(--display); letter-spacing: 1.2px; }
+.badge-lanyard { z-index: 1; }
+.badge-orbit { pointer-events: none; }
+.id-badge { z-index: 2; }
+.badge-stage.is-active { z-index: 16; }
+.id-badge.is-moving { will-change: transform; }
+.id-badge {
+  position: absolute; width: 280px; top: 132px; left: calc(50% - 140px);
+  background: #eeeeee; color: #202020; padding: 19px 16px 15px; border: 1px solid #fff9;
+  border-radius: 13px; box-shadow: 0 2px 3px #0002, 0 22px 40px -12px #0005, inset 0 0 0 5px #fff4;
+  transform: rotate(0deg); transform-origin: 50% 16px; cursor: grab;
+  touch-action: none; user-select: none; -webkit-user-select: none;
+}
+.id-badge.is-dragging { cursor: grabbing; box-shadow: 0 35px 55px -12px #0006; }
+.id-badge:focus-visible { outline: 3px solid var(--ink); outline-offset: 7px; }
+.badge-clip {
+  position: absolute; width: 28px; height: 44px; left: calc(50% - 14px); top: -34px;
+  border-radius: 7px 7px 5px 5px; border: 1px solid #737777;
+  background: linear-gradient(100deg, #505657, #f5f7f5 24%, #a2a8a7 49%, #e4e9e5 66%, #646b69);
+  box-shadow: inset 1px 0 1px #fffd, inset -2px 0 2px #0003, 1px 3px 4px #0003;
+}
+.badge-clip::before {
+  content: ''; position: absolute; width: 24px; height: 23px; left: -1px; top: -13px;
+  border: 3px solid #b9bfbc; border-radius: 9px 9px 7px 7px;
+  box-shadow: inset 0 1px 1px #0009, 0 -1px 0 #fff, 1px 1px 2px #0004;
+  background: linear-gradient(90deg, #4a504f55, #ffffff22, #4a504f55);
+}
+.badge-clip::after {
+  content: ''; position: absolute; width: 16px; height: 5px; left: 5px; bottom: 6px;
+  border-radius: 4px; background: #272d2b; box-shadow: 0 1px 0 #fff9, inset 0 1px 2px #0009;
+}
+.badge-card-top { display: flex; justify-content: space-between; font: 600 8px/1.3 var(--display); letter-spacing: .08em; padding: 5px 0 14px; }
+.badge-photo { height: 218px; position: relative; overflow: hidden; background: #b8b8b8; border-radius: 5px; }
+.badge-photo-grid { position: absolute; inset: 0; background-image: linear-gradient(#fff2 1px, transparent 1px), linear-gradient(90deg, #fff2 1px, transparent 1px); background-size: 30px 30px; }
+.badge-photo-monogram { position: absolute; font: 600 170px/1 var(--display); letter-spacing: -.1em; color: #ffffff30; left: 10px; top: 22px; }
+.badge-photo img { position: absolute; width: 100%; height: 100%; object-fit: contain; object-position: bottom; filter: grayscale(1); pointer-events: none; }
+.badge-photo img[hidden] { display: none; }
+.badge-photo-label { position: absolute; bottom: 10px; left: 10px; background: #eeeeee; border-radius: 2px; padding: 5px 7px; font-size: 7px; letter-spacing: .1em; }
+.badge-identity { padding: 16px 0 14px; }
+.badge-identity > span { font-size: 7px; letter-spacing: .13em; color: #555555; }
+.badge-identity strong { display: block; font: 600 39px/.92 var(--display); letter-spacing: -.065em; margin: 9px 0 12px; }
+.badge-identity p { font-size: 8px; letter-spacing: .04em; margin: 0; }
+.badge-card-bottom { display: flex; align-items: center; justify-content: space-between; gap: 12px; border-top: 1px solid #cccccc; padding-top: 12px; }
+.badge-barcode { width: 77px; height: 25px; background: repeating-linear-gradient(90deg, #303030 0 1px, transparent 1px 3px, #303030 3px 5px, transparent 5px 7px, #303030 7px 8px, transparent 8px 11px); }
+.badge-card-bottom > span:nth-child(2) { font-size: 7px; line-height: 1.6; letter-spacing: .06em; margin-left: auto; }
+.badge-card-bottom svg { width: 22px; height: 22px; }
+.badge-instructions { position: absolute; bottom: 10px; left: 0; width: 100%; text-align: center; font-size: 9px; letter-spacing: .13em; color: var(--muted); pointer-events: none; }
+.badge-instructions svg { width: 14px; height: 14px; vertical-align: middle; margin-right: 5px; }
+.badge-instructions > span { display: block; font-size: 9px; letter-spacing: 0; color: var(--muted); margin-top: 8px; }
+
+.badge-instructions {max-width:none;color:var(--muted)}
+.badge-instructions > span:first-child {display:inline;font-size:12px;color:inherit;margin-right:5px}
+.badge-stage-note {color:var(--muted)}
+@media(max-width:1000px){
+ .badge-stage {height:570px}
+ .id-badge {width:244px;left:calc(50% - 122px);top:115px;padding:17px 13px 13px}
+ .badge-photo {height:190px}
+ .badge-identity strong {font-size:34px}
+ .badge-stage-note {display:none}
+}
+@media(max-width:640px){
+ .badge-stage {height:565px;margin-top:0}
+ .id-badge {top:90px}
+ .badge-instructions {bottom:18px;font-size:8px}
+ .badge-instructions > span {font-size:8px}
+}

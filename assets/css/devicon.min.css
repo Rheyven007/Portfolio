@@ -1,0 +1,15 @@
+/* Devicon v2.16.0, MIT. License: ../fonts/DEVICON-LICENSE.txt. */
+@font-face{font-family:devicon;src:url("../fonts/devicon.woff") format("woff");font-weight:400;font-style:normal;font-display:swap}
+.stack-icon[class*=devicon-]{font-family:devicon!important;font-style:normal;font-weight:400;line-height:1;-webkit-font-smoothing:antialiased}
+.devicon-css3-plain::before{content:""}
+.devicon-git-plain::before{content:""}
+.devicon-github-original::before{content:""}
+.devicon-html5-plain::before{content:""}
+.devicon-javascript-plain::before{content:""}
+.devicon-laravel-original::before{content:""}
+.devicon-mysql-plain::before{content:""}
+.devicon-nodejs-plain::before{content:""}
+.devicon-php-plain::before{content:""}
+.devicon-postman-plain::before{content:""}
+.devicon-react-original::before{content:""}
+.devicon-vercel-original::before{content:""}

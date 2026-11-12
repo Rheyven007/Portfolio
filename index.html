@@ -1,257 +1,372 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Rheyven Bausas — graduating BSIT student from Batangas State University, focused on web development, UI/UX, application development, and practical digital solutions.">
-    <meta name="theme-color" content="#f7f7f3" id="theme-color">
-    <meta property="og:title" content="Rheyven Bausas — Developer & Designer">
-    <meta property="og:description" content="Portfolio of Rheyven Bausas, a graduating BSIT student focused on web development, UI/UX, app development, and real-world problem solving.">
-    <meta property="og:type" content="website">
-    <title>RHEYVEN BAUSAS — Portfolio</title>
-
-    <link rel="preload" as="image" href="assets/images/rb-logo.svg">
-    <link id="site-favicon" rel="icon" type="image/svg+xml" sizes="any" href="assets/images/favicon.svg">
-    <script>try { document.documentElement.dataset.theme = localStorage.getItem('portfolio-theme') === 'dark' ? 'dark' : 'light'; } catch { document.documentElement.dataset.theme = 'light'; }</script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/sections.css">
-    <link rel="stylesheet" href="assets/css/branding.css">
-    <noscript><style>.site-loader { display: none; }</style></noscript>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Rheyven Bausas — developer and designer in Batangas, Philippines. Thoughtful websites, useful systems, and selected work.">
+<meta name="theme-color" content="#111111">
+<meta property="og:title" content="Rheyven Bausas — Developer & Designer">
+<meta property="og:description" content="Thoughtful websites. Useful systems. Digital work by Rheyven Bausas.">
+<meta property="og:type" content="website">
+<title>Rheyven Bausas — Developer & Designer</title>
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon-dark.svg">
+<script>try { document.documentElement.dataset.theme = localStorage.getItem('portfolio-theme') === 'dark' ? 'dark' : 'light'; } catch {}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/devicon.min.css">
+<link rel="stylesheet" href="assets/css/studio.css">
+<link rel="stylesheet" href="assets/css/orange-studio.css">
+<script src="assets/js/studio.js" defer>
+</script>
 </head>
-<body class="refined-portfolio">
-<div class="site-loader" aria-hidden="true">
-    <div class="loader-identity">
-        <div class="loader-logo-stage"><img class="motion-logo-fallback" data-rb-logo src="assets/images/rb-logo.svg" alt=""><canvas class="motion-logo loader-canvas" width="320" height="308" aria-hidden="true"></canvas></div>
-        <span class="loader-name">RHEYVEN BAUSAS</span>
-        <span class="loader-caption">DEVELOPER &amp; DESIGNER</span>
-        <div class="loader-sequence"><span>DESIGN</span><span>DEVELOP</span><span>REFINE</span></div>
-    </div>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="header wrap" id="top">
+<a class="brand" href="#top" aria-label="Rheyven Bausas home">
+<img src="assets/images/rb-logo-dark.svg" alt="RB" width="48" height="44">
+<span>RHEYVEN<br>BAUSAS</span>
+</a>
+<nav class="nav" id="navigation" aria-label="Main navigation">
+<a href="#work">Work <span>03</span>
+</a>
+<a href="#about">About</a>
+<a href="#stack">Stack</a>
+<a href="#contact">Let’s talk ↗</a>
+</nav>
+<div class="header-controls">
+<button class="theme-toggle" type="button" aria-label="Switch to light theme">◐</button>
+<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">+</span>
+</button>
 </div>
-
-<header class="site-header" id="site-header">
-    <a class="brand" href="#top" aria-label="RHEYVEN BAUSAS home">
-        <span class="brand-logo-stage"><img class="motion-logo-fallback" data-rb-logo src="assets/images/rb-logo.svg" alt=""><canvas class="motion-logo brand-canvas" width="100" height="96" aria-hidden="true"></canvas></span>
-    </a>
-
-    <nav class="desktop-nav" aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#services">Services</a>
-        <a href="#process">Process</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <div class="header-actions">
-        <button class="theme-toggle magnetic" type="button" aria-label="Switch to light theme" aria-pressed="false">
-            <i data-lucide="sun"></i><span class="theme-label">LIGHT</span>
-        </button>
-        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
-            <span></span><span></span>
-        </button>
-    </div>
 </header>
-
-<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
-    <div class="mobile-menu-inner">
-        <span class="eyebrow">NAVIGATION / 2026</span>
-        <nav aria-label="Mobile navigation">
-            <a href="#about"><span>01</span>About</a>
-            <a href="#work"><span>02</span>Work</a>
-            <a href="#services"><span>03</span>Services</a>
-            <a href="#process"><span>04</span>Process</a>
-            <a href="#contact"><span>05</span>Contact</a>
-        </nav>
-        <div class="mobile-menu-footer">
-            <span>Philippines</span>
-            <span>Internships / freelance / collaboration</span>
-        </div>
-    </div>
+<main id="main">
+<section class="hero wrap" aria-labelledby="hero-heading">
+<span class="hero-watermark" aria-hidden="true">RHEYVEN</span>
+<div class="hero-meta mono">
+<span>DEVELOPER &amp; DESIGNER</span>
+<span>BATANGAS, PHILIPPINES</span>
+<span>PORTFOLIO / 2026</span>
 </div>
-<main id="top">
-<section class="hero badge-hero" id="hero" aria-labelledby="hero-heading">
-    <div class="badge-hero-top"><span>INDEPENDENT DEVELOPER &amp; DESIGNER</span><span>BATANGAS, PHILIPPINES / 2026</span></div>
-    <div class="badge-hero-layout">
-        <div class="badge-hero-copy">
-            <span class="hero-availability"><span></span> OPEN FOR INTERNSHIPS &amp; FREELANCE</span>
-            <h1 id="hero-heading">RHEYVEN<br><span>BAUSAS.</span></h1>
-            <p class="hero-intro">A curious mind.<br>A builder at heart.</p>
-            <p class="hero-description">I turn real-world problems into thoughtful websites, useful systems, and experiences that feel right.</p>
-            <div class="hero-links">
-                <a class="hero-primary-link" href="#work">EXPLORE MY WORK <i data-lucide="arrow-up-right"></i></a>
-                <a class="hero-secondary-link" href="#contact">LET'S TALK <i data-lucide="arrow-up-right"></i></a>
-            </div>
-        </div>
-        <div class="badge-stage">
-            <div class="badge-orbit" aria-hidden="true"></div>
-            <span class="badge-stage-note" aria-hidden="true">A LITTLE INTRODUCTION, ON A STRING.</span>
-            <svg class="badge-lanyard" aria-hidden="true">
-                <g class="lanyard-strap lanyard-strap-left" data-lanyard-side="-1">
-                    <path id="badge-strap-left" class="lanyard-edge" data-strap-shape data-width="30"/>
-                    <path class="lanyard-fabric" data-strap-shape data-width="27"/>
-                    <path class="lanyard-seam" data-strap-shape data-width="24"/>
-                    <path class="lanyard-inner" data-strap-shape data-width="22"/>
-                    <path class="lanyard-weave" data-strap-shape data-width="20"/>
-                    <text class="lanyard-name" dy="2.5"><textPath href="#badge-strap-left" startOffset="10">RHEYVEN BAUSAS / RHEYVEN BAUSAS / RHEYVEN BAUSAS / RHEYVEN BAUSAS / </textPath></text>
-                </g>
-                <g class="lanyard-strap lanyard-strap-right" data-lanyard-side="1">
-                    <path id="badge-strap-right" class="lanyard-edge" data-strap-shape data-width="30"/>
-                    <path class="lanyard-fabric" data-strap-shape data-width="27"/>
-                    <path class="lanyard-seam" data-strap-shape data-width="24"/>
-                    <path class="lanyard-inner" data-strap-shape data-width="22"/>
-                    <path class="lanyard-weave" data-strap-shape data-width="20"/>
-                    <text class="lanyard-name" dy="2.5"><textPath href="#badge-strap-right" startOffset="10">RHEYVEN BAUSAS / RHEYVEN BAUSAS / RHEYVEN BAUSAS / RHEYVEN BAUSAS / </textPath></text>
-                </g>
-            </svg>
-            <div class="id-badge" tabindex="0" role="button" aria-label="Pull Rheyven's ID badge" aria-describedby="badge-instructions">
-                <div class="badge-clip" aria-hidden="true"></div>
-                <div class="badge-card-top"><span>RB / STUDIO OF ONE</span><span>2026</span></div>
-                <div class="badge-photo">
-                    <span class="badge-photo-grid" aria-hidden="true"></span>
-                    <span class="badge-photo-monogram" aria-hidden="true">RB</span>
-                    <img src="assets/images/profile.png" alt="Rheyven Bausas" draggable="false" onerror="this.hidden=true;">
-                    <span class="badge-photo-label">HELLO, THAT'S ME.</span>
-                </div>
-                <div class="badge-identity"><span>THE PERSON BEHIND THE PIXELS</span><strong>Rheyven<br>Bausas</strong><p>WEB DEVELOPER &amp; UI/UX DESIGNER</p></div>
-                <div class="badge-card-bottom"><span class="badge-barcode" aria-hidden="true"></span><span>RB-007<br>CREATIVE ACCESS</span><i data-lucide="arrow-up-right" aria-hidden="true"></i></div>
-            </div>
-            <p class="badge-instructions" id="badge-instructions"><i data-lucide="move-up-right" aria-hidden="true"></i> DRAG ANYWHERE. LET IT SPRING BACK.<span>Or focus the badge and use the arrow keys. Escape to reset.</span></p>
-        </div>
-    </div>
-    <div class="badge-hero-bottom"><span>WEB DEVELOPMENT / UI &amp; UX / SOFTWARE QUALITY</span><a href="#about">MEET THE PERSON <i data-lucide="arrow-down"></i></a></div>
-</section>
+<div class="hero-grid">
+<div class="hero-portrait"><img src="assets/images/profile.png" alt="Rheyven Bausas" width="1232" height="1030" fetchpriority="high"></div>
+<div class="hero-copy entrance">
+<p class="availability mono"><span aria-hidden="true"></span> OPEN FOR INTERNSHIPS &amp; FREELANCE</p>
+<p class="hero-role">A curious mind.<br>A builder at heart.</p>
+<div class="hero-bottom"><p>I turn real-world problems into thoughtful websites and useful digital experiences.</p>
+<a class="hero-work-link" href="#work">Explore my work <span aria-hidden="true">&#8599;</span></a></div>
+</div>
+<div class="hero-name"><span class="mono">WEB DEVELOPMENT &amp; UI / UX DESIGN</span><h1 id="hero-heading">RHEYVEN<span class="hero-surname">BAUSAS.</span></h1></div>
+<a class="hero-project" href="#work" aria-label="Explore CulinAI and selected projects"><img src="assets/images/culinai.png" alt="CulinAI website preview" width="1916" height="944"><span class="mono">SELECTED WORK / 03 <span aria-hidden="true">&#8599;</span></span></a>
 
-<section class="statement section-pad" id="about" aria-labelledby="about-heading">
-    <div class="section-intro reveal"><span class="eyebrow">01 / THE INTRODUCTION</span><span class="section-line"></span><span class="section-aside">A PERSON BEFORE A PORTFOLIO</span></div>
-    <div class="statement-grid">
-        <div class="about-heading reveal"><h2 class="display-title" id="about-heading">Thoughtful work.<br><em>Practical impact.</em></h2><div class="about-signature"><img data-rb-logo src="assets/images/rb-logo.svg" alt=""><span>Rheyven Bausas<small>DEVELOPER &amp; DESIGNER</small></span></div></div>
-        <div class="about-copy reveal"><p class="large-copy">I like making complicated things feel simple.</p><p>I am a graduating BSIT student at Batangas State University, building websites and applications around real people and real problems. My interest in technology started in senior high school and grew through personal, academic, and team projects.</p><p>From the first sketch to the final build, I care about how a product works just as much as how it looks.</p><div class="fact-list"><div><span>BASED IN</span><strong>Batangas, Philippines</strong></div><div><span>FOCUS</span><strong>Web / UI &amp; UX / Software quality</strong></div><div><span>OPEN TO</span><strong>Internships &amp; freelance</strong></div></div></div>
-    </div>
+</div>
+<div class="hero-foot mono">
+<span>CODE WITH PURPOSE. DESIGN WITH INTENT.</span>
+<a href="#work">SCROLL TO EXPLORE <span aria-hidden="true">↓</span>
+</a>
+</div>
 </section>
-<section class="stats-band section-pad" aria-label="Portfolio highlights">
-    <div class="stat reveal"><strong>05<span>+</span></strong><span>YEARS LEARNING &amp; BUILDING</span></div>
-    <div class="stat reveal"><strong>03</strong><span>SELECTED PROJECTS</span></div>
-    <div class="stat reveal"><strong>03</strong><span>CORE FOCUS AREAS</span></div>
-    <div class="stat reveal"><strong>2027</strong><span>EXPECTED GRADUATION</span></div>
+<section class="work wrap section" id="work" aria-labelledby="work-heading">
+<div class="section-label mono">
+<span>01 / SELECTED WORK</span>
+<span>A FEW IDEAS, OUT IN THE WORLD</span>
+</div>
+<div class="section-heading">
+<h2 id="work-heading">Good ideas.<br>
+<em>Real-world impact.</em>
+</h2>
+<p>Practical systems and considered websites.<br>A selection of what I’ve been building.</p>
+</div>
+<div class="projects">
+<article class="project featured">
+<div class="project-frame">
+<div class="frame-meta mono">
+<span>01 / UNIQUEUE</span>
+<span>WEB APPLICATION</span>
+</div>
+<button class="project-preview" type="button" data-preview="assets/images/uniqueue.png" data-title="UNIQUEUE" aria-label="Enlarge UNIQUEUE screenshot">
+<img src="assets/images/uniqueue.png" alt="UNIQUEUE campus queue management website" loading="lazy">
+<span class="preview-label mono">VIEW SCREENSHOT ↗</span>
+</button>
+</div>
+<div class="project-caption">
+<div>
+<p class="mono">01 / CAPSTONE PROJECT</p>
+<h3>UNIQUEUE</h3>
+</div>
+<p>A better campus experience. Join a queue remotely and receive an alert as your turn approaches.</p>
+<a class="circle-link" href="https://uniqueue.site" target="_blank" rel="noopener noreferrer" aria-label="Visit UNIQUEUE website">↗</a>
+</div>
+<p class="featured-description">A campus queueing platform with remote queues and alerts as your turn approaches.</p>
+<div class="project-tags mono">
+<span>PHP</span>
+<span>MYSQL</span>
+<span>JAVASCRIPT</span>
+<span>ANDROID</span>
+</div>
+</article>
+<article class="project">
+<div class="project-frame">
+<div class="frame-meta mono">
+<span>02 / CULINAI</span>
+<span>RECIPE DISCOVERY</span>
+</div>
+<button class="project-preview" type="button" data-preview="assets/images/culinai.png" data-title="CulinAI" aria-label="Enlarge CulinAI screenshot">
+<img src="assets/images/culinai.png" alt="CulinAI homepage with recipe inspiration and food photography" loading="lazy">
+<span class="preview-label mono">VIEW SCREENSHOT ↗</span>
+</button>
+</div>
+<div class="project-caption">
+<div>
+<p class="mono">02 / WEBSITE</p>
+<h3>CulinAI</h3>
+</div>
+<a class="circle-link" href="https://culinai.site" target="_blank" rel="noopener noreferrer" aria-label="Visit CulinAI website">↗</a>
+</div>
+<p class="project-description">A little inspiration for everyday cooking. Recipes, ingredients, and a thoughtful experience around food.</p>
+<a class="domain mono" href="https://culinai.site" target="_blank" rel="noopener noreferrer">CULINAI.SITE ↗</a>
+</article>
+<article class="project project-offset">
+<div class="project-frame">
+<div class="frame-meta mono">
+<span>03 / JEFF THE HEALER</span>
+<span>OFFICIAL WEBSITE</span>
+</div>
+<button class="project-preview" type="button" data-preview="assets/images/jeffthehealer.png" data-title="Jeff the Healer" aria-label="Enlarge Jeff the Healer screenshot">
+<img src="assets/images/jeffthehealer.png" alt="Jeff the Healer official website showing visit registration and announcements" loading="lazy">
+<span class="preview-label mono">VIEW SCREENSHOT ↗</span>
+</button>
+</div>
+<div class="project-caption">
+<div>
+<p class="mono">03 / OFFICIAL WEBSITE</p>
+<h3>Jeff the Healer</h3>
+</div>
+<a class="circle-link" href="https://jeffthehealer.com" target="_blank" rel="noopener noreferrer" aria-label="Visit Jeff the Healer website">↗</a>
+</div>
+<p class="project-description">An online home for the community, with announcements, visit information, and a clear path to registration.</p>
+<a class="domain mono" href="https://jeffthehealer.com" target="_blank" rel="noopener noreferrer">JEFFTHEHEALER.COM ↗</a>
+</article>
+</div>
 </section>
-<section class="skills section-pad" id="skills" aria-labelledby="skills-heading">
-    <div class="section-intro reveal"><span class="eyebrow">02 / THE TOOLKIT</span><span class="section-line"></span><span class="section-aside">ALWAYS LEARNING. ALWAYS BUILDING.</span></div>
-    <div class="skills-heading reveal"><h2 class="display-title" id="skills-heading">Good ideas.<br><em>The tools to build them.</em></h2><p>A practical mix of development, design, and quality. I choose tools around the problem and keep learning as I build.</p></div>
-    <div class="capability-grid">
-        <article class="capability-card reveal"><i data-lucide="code-2" aria-hidden="true"></i><span class="card-label">01 / DEVELOPMENT</span><h3>Built to work.</h3><p>Responsive interfaces, connected data, and useful web applications.</p><div class="capability-tags"><span>PHP</span><span>JavaScript</span><span>MySQL</span><span>HTML / CSS</span></div></article>
-        <article class="capability-card reveal"><i data-lucide="pen-tool" aria-hidden="true"></i><span class="card-label">02 / DESIGN</span><h3>Made for people.</h3><p>Clear flows and considered interfaces that make products easier to use.</p><div class="capability-tags"><span>UI / UX</span><span>Responsive design</span><span>Prototyping</span></div></article>
-        <article class="capability-card reveal"><i data-lucide="scan-eye" aria-hidden="true"></i><span class="card-label">03 / QUALITY</span><h3>Care in the details.</h3><p>Testing, refinement, and maintenance throughout the development process.</p><div class="capability-tags"><span>Software quality</span><span>Git / GitHub</span><span>API integration</span></div></article>
-    </div>
-    <div class="toolkit-footer reveal"><span class="card-label">IN MY TOOLKIT</span><div class="technology-list"><span><i class="devicon-php-plain" aria-hidden="true"></i>PHP</span><span><i class="devicon-javascript-plain" aria-hidden="true"></i>JavaScript</span><span><i class="devicon-mysql-plain" aria-hidden="true"></i>MySQL</span><span><i class="devicon-html5-plain" aria-hidden="true"></i>HTML5</span><span><i class="devicon-css3-plain" aria-hidden="true"></i>CSS3</span><span><i class="devicon-git-plain" aria-hidden="true"></i>Git</span><span><i class="devicon-github-original" aria-hidden="true"></i>GitHub</span><span><i class="devicon-react-original" aria-hidden="true"></i>React</span><span><i class="devicon-laravel-original" aria-hidden="true"></i>Laravel</span><span><i class="devicon-nodejs-plain" aria-hidden="true"></i>Node.js</span></div><p>Currently exploring machine learning.</p></div>
+<section class="about light-band" id="about" aria-labelledby="about-heading">
+<div class="wrap section">
+<div class="section-label mono">
+<span>02 / A LITTLE ABOUT ME</span>
+<span>PERSON FIRST. DEVELOPER SECOND.</span>
+</div>
+<div class="about-grid">
+<div>
+<h2 id="about-heading">I like making<br>complicated things<br>
+<em>feel simple.</em>
+</h2>
+<a class="text-link" href="https://github.com/Rheyven007" target="_blank" rel="noopener noreferrer">A look inside my GitHub ↗</a>
+</div>
+<div class="about-copy">
+<p class="lead">Good work starts with curiosity.<br>And gets better with care.</p>
+<p>I’m a graduating BSIT student at Batangas State University, majoring in Business Analytics. My interest in technology started in senior high school and grew through personal, academic, and team projects.</p>
+<p>From the first sketch to the final build, I care about how a product works just as much as how it looks. I enjoy connecting design, development, and software quality to solve real problems.</p>
+<dl class="facts">
+<div>
+<dt>BASED IN</dt>
+<dd>Batangas, Philippines</dd>
+</div>
+<div>
+<dt>EDUCATION</dt>
+<dd>BSIT · Expected graduation 2027</dd>
+</div>
+<div>
+<dt>OPEN TO</dt>
+<dd>Internships, freelance &amp; collaboration</dd>
+</div>
+</dl>
+</div>
+</div>
+<div class="journey">
+<span class="mono">THE JOURNEY SO FAR</span>
+<div>
+<span class="mono">2023</span>
+<h3>A starting point.</h3>
+<p>BSIT at Batangas State University.</p>
+</div>
+<div>
+<span class="mono">2025</span>
+<h3>Building together.</h3>
+<p>Academic project leadership, including TALYNK.</p>
+</div>
+<div>
+<span class="mono">2026</span>
+<h3>Ideas into systems.</h3>
+<p>Leading a team while building UNIQUEUE.</p>
+</div>
+</div>
+</div>
 </section>
-
-<section class="work section-pad" id="work" aria-labelledby="work-heading">
-    <div class="section-intro reveal"><span class="eyebrow">03 / SELECTED WORK</span><span class="section-line"></span><span class="section-aside">A SMALL COLLECTION. A LOT OF CARE.</span></div>
-    <div class="work-heading reveal"><h2 class="display-title" id="work-heading">Ideas made real.<br><em>One project at a time.</em></h2><div class="work-heading-note"><span class="work-count">01 &mdash; 03</span><p>Useful systems. Thoughtful websites.<br>A selection of the things I have built.</p></div></div>
-    <div class="project-list">
-        <article class="project project-feature reveal">
-            <div class="project-visual"><div class="project-browser-bar" aria-hidden="true"><span class="browser-dots"><span></span><span></span><span></span></span><span>uniqueue.site</span><span class="browser-symbol">&#8599;</span></div>
-                <button class="project-media" type="button" data-lightbox data-project-index="0" data-title="UNIQUEUE" data-category="CAMPUS QUEUE MANAGEMENT SYSTEM" data-description="A capstone queue management system for students, parents, and campus clients. Users can queue remotely and receive an alert when their turn is getting close." data-image="assets/images/uniqueue.png" aria-label="Open UNIQUEUE project preview">
-                    <img src="assets/images/uniqueue.png" alt="UNIQUEUE campus queue management website" loading="lazy" onerror="this.hidden=true; this.nextElementSibling.hidden=false;">
-                    <div class="project-image-placeholder" hidden><span>UNIQUEUE</span><span>PROJECT PREVIEW</span></div>
-                    <span class="project-view">EXPLORE PREVIEW <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
-                </button>
-                <div class="project-visual-caption"><span>WEB APPLICATION</span><span>2026 / CAPSTONE PROJECT</span></div>
-            </div>
-            <div class="project-info"><div class="project-kicker"><span>01 / FEATURED PROJECT</span><span class="project-status">LIVE SITE</span></div><div class="project-main"><h3>UNIQUEUE</h3><span>LESS WAITING. A BETTER CAMPUS EXPERIENCE.</span></div><p>A campus queueing platform that lets students, parents, and campus clients join remotely and receive alerts as their turn approaches.</p><div class="project-tech"><span>PHP</span><span>MySQL</span><span>JavaScript</span><span>Android</span></div><div class="project-bottom"><a class="project-site-link" href="https://uniqueue.site" target="_blank" rel="noopener noreferrer">VIEW LIVE WEBSITE <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a><span class="project-domain">uniqueue.site</span></div></div>
-        </article>
-        <article class="project project-secondary reveal"><a class="project-media project-cover cover-jeff" href="https://jeffthehealer.com" target="_blank" rel="noopener noreferrer" aria-label="Visit Jeff the Healer Official website"><span class="cover-topline"><span>02 / OFFICIAL WEBSITE</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span><span class="cover-orbit" aria-hidden="true"></span><span class="cover-wordmark">Jeff the Healer<span>OFFICIAL</span></span><span class="cover-bottomline"><span>jeffthehealer.com</span><span>IMAGERY COMING SOON</span></span></a><div class="project-info"><div class="project-main"><span>OFFICIAL WEBSITE</span><h3>Jeff the Healer Official</h3></div><a class="project-inline-link" href="https://jeffthehealer.com" target="_blank" rel="noopener noreferrer" aria-label="Open Jeff the Healer Official website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a><p>The official online home for Jeff the Healer.</p><a class="project-domain" href="https://jeffthehealer.com" target="_blank" rel="noopener noreferrer">jeffthehealer.com</a></div></article>
-        <article class="project project-secondary reveal"><a class="project-media project-cover cover-culinai" href="https://culinai.site" target="_blank" rel="noopener noreferrer" aria-label="Visit CUlinAi website"><span class="cover-topline"><span>03 / WEBSITE</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span><span class="cover-grid" aria-hidden="true"></span><span class="cover-wordmark">CUlinAi<span>IDEA INTO EXPERIENCE.</span></span><span class="cover-bottomline"><span>culinai.site</span><span>IMAGERY COMING SOON</span></span></a><div class="project-info"><div class="project-main"><span>WEBSITE</span><h3>CUlinAi</h3></div><a class="project-inline-link" href="https://culinai.site" target="_blank" rel="noopener noreferrer" aria-label="Open CUlinAi website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a><p>A digital project brought to life on the web.</p><a class="project-domain" href="https://culinai.site" target="_blank" rel="noopener noreferrer">culinai.site</a></div></article>
-    </div>
-    <div class="work-footer reveal"><span>DESIGNED WITH INTENT. BUILT WITH CARE.</span><a href="#contact">HAVE A PROJECT IN MIND? LET'S TALK <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a></div>
+<section class="stack wrap section" id="stack" aria-labelledby="stack-heading">
+<div class="section-label mono">
+<span>03 / THE WORKING TOOLKIT</span>
+<span>ALWAYS A STUDENT OF THE CRAFT</span>
+</div>
+<div class="section-heading">
+<h2 id="stack-heading">Good ideas need<br>
+<em>good tools.</em>
+</h2>
+<p>My toolkit for building, experimenting, and learning.<br>The problem comes first. The stack follows.</p>
+</div>
+<div class="stack-table">
+<div class="stack-row">
+<div class="stack-category">
+<span class="mono">01</span>
+<h3>Interfaces</h3>
+</div>
+<ul>
+<li><i class="stack-icon devicon-html5-plain" aria-hidden="true"></i><span>HTML5</span></li>
+<li><i class="stack-icon devicon-css3-plain" aria-hidden="true"></i><span>CSS3</span></li>
+<li><i class="stack-icon devicon-javascript-plain" aria-hidden="true"></i><span>JavaScript</span></li>
+<li><i class="stack-icon devicon-react-original" aria-hidden="true"></i><span>React</span></li>
+<li><i class="stack-icon devicon-react-original" aria-hidden="true"></i><span>React Native</span></li>
+<li><svg class="stack-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 18 8-13 8 13M8 18l4-7 4 7"/></svg><span>Expo</span></li>
+</ul>
+</div>
+<div class="stack-row">
+<div class="stack-category">
+<span class="mono">02</span>
+<h3>Behind the scenes</h3>
+</div>
+<ul>
+<li><i class="stack-icon devicon-php-plain" aria-hidden="true"></i><span>PHP</span></li>
+<li><i class="stack-icon devicon-laravel-original" aria-hidden="true"></i><span>Laravel</span></li>
+<li><i class="stack-icon devicon-nodejs-plain" aria-hidden="true"></i><span>Node.js</span></li>
+<li><i class="stack-icon devicon-mysql-plain" aria-hidden="true"></i><span>MySQL</span></li>
+<li><svg class="stack-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 4 3 12l5 8M16 4l5 8-5 8M14 7l-4 10"/></svg><span>REST APIs</span></li>
+</ul>
+</div>
+<div class="stack-row">
+<div class="stack-category">
+<span class="mono">03</span>
+<h3>Design &amp; delivery</h3>
+</div>
+<ul>
+<li><svg class="stack-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/></svg><span>UI / UX</span></li>
+<li><svg class="stack-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 20 4-1L20 7a2 2 0 0 0-4-4L4 15v5ZM14 5l5 5M4 15l4 4"/></svg><span>Prototyping</span></li>
+<li><i class="stack-icon devicon-git-plain" aria-hidden="true"></i><span>Git</span></li>
+<li><i class="stack-icon devicon-github-original" aria-hidden="true"></i><span>GitHub</span></li>
+<li><i class="stack-icon devicon-vercel-original" aria-hidden="true"></i><span>Vercel</span></li>
+<li><svg class="stack-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="15" height="12" rx="1"/><path d="M9 15v5M5 20h8"/><rect x="16" y="10" width="6" height="11" rx="1"/></svg><span>Responsive design</span></li>
+</ul>
+</div>
+<div class="stack-row">
+<div class="stack-category">
+<span class="mono">04</span>
+<h3>Quality &amp; workflow</h3>
+</div>
+<ul>
+<li><svg class="stack-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 6 6 6-6 6M13 18h7"/></svg><span>OpenAI Codex</span></li>
+<li><i class="stack-icon devicon-postman-plain" aria-hidden="true"></i><span>Postman</span></li>
+<li><svg class="stack-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 12 4 4 7-8M13 4h8v16h-8"/></svg><span>API testing</span></li>
+<li><svg class="stack-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="7" width="10" height="13" rx="5"/><path d="m9 3 3 4 3-4M3 9l4 2M21 9l-4 2M3 16h4M21 16h-4M12 8v12"/></svg><span>Debugging</span></li>
+<li><svg class="stack-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z"/><path d="m8 12 3 3 5-6"/></svg><span>Software quality</span></li>
+</ul>
+</div>
+</div>
+<div class="stack-note">
+<span class="mono">A NOTE ON AI</span>
+<p>Codex is part of my development workflow: a collaborator for exploring ideas, working through code, and refining a build. I review, test, and take responsibility for what I ship.</p>
+</div>
 </section>
-
-<section class="manifesto section-pad" id="manifesto" aria-labelledby="manifesto-heading">
-    <div class="section-intro reveal"><span class="eyebrow">04 / THE MINDSET</span><span class="section-line"></span></div>
-    <div class="manifesto-grid"><div class="reveal"><span class="manifesto-mark" aria-hidden="true">/</span><h2 id="manifesto-heading">Less noise.<br><em>More intent.</em></h2></div><div class="manifesto-copy reveal"><p>Start with the problem.<br>Build with a purpose.</p><p>I like understanding the people involved, visualizing a useful solution, and bringing it to life. Every decision should help someone get something done.</p><div class="principles"><span>CLARITY OVER CLUTTER</span><span>FUNCTION WITH FORM</span><span>PEOPLE AT THE CENTER</span><span>ROOM TO KEEP GROWING</span></div></div></div>
+<section class="services wrap section" id="services" aria-labelledby="services-heading">
+<div class="section-label mono">
+<span>04 / HOW I CAN HELP</span>
+<span>FROM FIRST SKETCH TO FINAL DETAIL</span>
+</div>
+<div class="services-grid">
+<h2 id="services-heading">Small details.<br>
+<em>Useful outcomes.</em>
+</h2>
+<div class="service-list">
+<details open>
+<summary>
+<span class="mono">01</span>Websites &amp; applications<span class="detail-symbol" aria-hidden="true">+</span>
+</summary>
+<p>Responsive websites and practical web applications, with connected data and a clear experience for the people using them.</p>
+</details>
+<details>
+<summary>
+<span class="mono">02</span>Interface &amp; experience design<span class="detail-symbol" aria-hidden="true">+</span>
+</summary>
+<p>Thoughtful layouts, straightforward flows, and prototypes that help turn a rough idea into a usable product.</p>
+</details>
+<details>
+<summary>
+<span class="mono">03</span>Systems &amp; integrations<span class="detail-symbol" aria-hidden="true">+</span>
+</summary>
+<p>Database design, API integrations, and system development that connect the pieces behind the interface.</p>
+</details>
+<details>
+<summary>
+<span class="mono">04</span>Testing &amp; ongoing care<span class="detail-symbol" aria-hidden="true">+</span>
+</summary>
+<p>Software quality checks, bug fixes, deployment, and careful maintenance to keep improving the experience.</p>
+</details>
+</div>
+</div>
+<div class="process mono">
+<span>THE APPROACH</span>
+<span>UNDERSTAND <b>→</b> DESIGN <b>→</b> BUILD <b>→</b> REFINE</span>
+</div>
 </section>
-<section class="services section-pad" id="services" aria-labelledby="services-heading">
-    <div class="section-intro reveal"><span class="eyebrow">05 / HOW I CAN HELP</span><span class="section-line"></span><span class="section-aside">FROM FIRST IDEA TO FINAL DETAIL</span></div>
-    <div class="services-heading section-heading reveal"><h2 class="display-title" id="services-heading">Your next idea.<br><em>Built with care.</em></h2><p>Support across the design and development process, with attention to the details that make a product useful.</p></div>
-    <div class="offering-grid">
-        <article class="offering-card reveal"><span class="offering-number">01</span><i data-lucide="panels-top-left" aria-hidden="true"></i><h3>Websites &amp;<br>web applications</h3><p>Responsive websites and practical applications, built around your goals.</p><ul><li>Website development</li><li>Frontend &amp; backend development</li><li>Web application development</li></ul></article>
-        <article class="offering-card reveal"><span class="offering-number">02</span><i data-lucide="pencil-ruler" aria-hidden="true"></i><h3>Interface &amp;<br>experience design</h3><p>Thoughtful layouts and straightforward flows for the people using your product.</p><ul><li>UI / UX design</li><li>Responsive interfaces</li><li>Prototyping &amp; refinement</li></ul></article>
-        <article class="offering-card reveal"><span class="offering-number">03</span><i data-lucide="workflow" aria-hidden="true"></i><h3>Systems &amp;<br>integrations</h3><p>Connect the pieces behind the interface and organize the way things work.</p><ul><li>Database design</li><li>API integration</li><li>System &amp; mobile app development</li></ul></article>
-        <article class="offering-card reveal"><span class="offering-number">04</span><i data-lucide="settings-2" aria-hidden="true"></i><h3>Quality &amp;<br>ongoing care</h3><p>Keep improving the experience through testing, fixes, and careful maintenance.</p><ul><li>Software quality testing</li><li>Bug fixing &amp; maintenance</li><li>Deployment</li></ul></article>
-    </div>
-</section>
-<section class="process section-pad" id="process" aria-labelledby="process-heading">
-    <div class="section-intro reveal"><span class="eyebrow">06 / THE PROCESS</span><span class="section-line"></span></div>
-    <div class="process-heading reveal"><h2 class="display-title" id="process-heading">A clear path<br><em>from idea to impact.</em></h2><p>Good work starts with understanding and gets better through iteration. Here is how I approach a project.</p></div>
-    <div class="process-grid">
-        <article class="process-card reveal"><span>01 / DISCOVER</span><i data-lucide="messages-square" aria-hidden="true"></i><h3>Understand.</h3><p>Get to know the problem, the people, and what a useful outcome looks like.</p></article>
-        <article class="process-card reveal"><span>02 / DESIGN</span><i data-lucide="pen-line" aria-hidden="true"></i><h3>Visualize.</h3><p>Map the flow and shape an interface before moving into development.</p></article>
-        <article class="process-card reveal"><span>03 / DEVELOP</span><i data-lucide="braces" aria-hidden="true"></i><h3>Build.</h3><p>Bring the idea to life with practical code and connected data.</p></article>
-        <article class="process-card reveal"><span>04 / REFINE</span><i data-lucide="check-check" aria-hidden="true"></i><h3>Make it better.</h3><p>Test, gather feedback, and polish the details that matter.</p></article>
-    </div>
-</section>
-<section class="timeline section-pad" id="journey" aria-labelledby="journey-heading">
-    <div class="section-intro reveal"><span class="eyebrow">07 / THE JOURNEY</span><span class="section-line"></span></div>
-    <div class="journey-layout"><div class="journey-heading reveal"><h2 class="display-title" id="journey-heading">Learning.<br>Building.<br><em>Becoming.</em></h2><p>Each project brings a new problem to solve and something new to learn.</p></div><div class="timeline-list">
-        <article class="timeline-item reveal"><span>2026<small>CURRENT CHAPTER</small></span><div><h3>Capstone &amp; system building</h3><p>Leading a team while building UNIQUEUE, a campus queue management system.</p></div></article>
-        <article class="timeline-item reveal"><span>2025</span><div><h3>Team project leadership</h3><p>Led academic projects including TALYNK while developing practical web systems.</p></div></article>
-        <article class="timeline-item reveal"><span>2024</span><div><h3>Web &amp; app development</h3><p>Expanded into web development, application development, and UI/UX through college projects.</p></div></article>
-        <article class="timeline-item reveal"><span>2023</span><div><h3>Where it started</h3><p>Started BSIT, majoring in Business Analytics, at Batangas State University.</p></div></article>
-    </div></div>
-</section>
-<section class="availability section-pad" aria-label="Availability">
-    <div class="availability-inner reveal"><span class="availability-status"><span></span> OPEN TO WHAT'S NEXT</span><h2>Have something<br><em>in mind?</em></h2><p>Available for internships, freelance projects, and thoughtful collaborations.</p><a class="outline-link" href="#contact">LET'S MAKE IT HAPPEN <i data-lucide="arrow-up-right"></i></a></div>
-</section>
-<section class="contact section-pad" id="contact" aria-labelledby="contact-heading">
-    <div class="contact-intro section-intro reveal"><span class="eyebrow">08 / GET IN TOUCH</span><span class="section-line"></span><span class="section-aside">GOOD WORK STARTS WITH A CONVERSATION</span></div>
-    <div class="contact-grid"><div class="contact-title reveal"><h2 id="contact-heading">Let's build<br><em>something good.</em></h2><p>A project, an opportunity, or an idea worth exploring. I would love to hear about it.</p><a class="text-link" href="mailto:bausasrheyven@gmail.com">bausasrheyven@gmail.com <i data-lucide="arrow-up-right"></i></a><div class="contact-details"><div><span>FIND ME ONLINE</span><a href="https://github.com/Rheyven007" target="_blank" rel="noopener noreferrer">GitHub / Rheyven007 <i data-lucide="arrow-up-right"></i></a></div><div><span>BASED IN</span><strong>Batangas, Philippines</strong></div></div></div>
-        <div class="contact-form-wrap reveal"><div class="form-heading"><span>START A CONVERSATION</span><i data-lucide="arrow-down-right" aria-hidden="true"></i></div><form class="contact-form" data-static-contact>
-            <div class="form-pair"><label><span>YOUR NAME</span><input type="text" name="name" autocomplete="name" placeholder="What should I call you?" required></label><label><span>YOUR EMAIL</span><input type="email" name="email" autocomplete="email" placeholder="you@example.com" required></label></div>
-            <label><span>WHAT'S IT ABOUT?</span><input type="text" name="subject" placeholder="A project, opportunity, or collaboration" required></label>
-            <label><span>YOUR MESSAGE</span><textarea name="message" rows="4" placeholder="Tell me a little about what you have in mind..." required></textarea></label>
-            <div class="form-action"><button class="submit-button" type="submit">LET'S TALK <i data-lucide="arrow-up-right"></i></button><span>Opens your email app<br>with your message ready.</span></div>
-        </form></div>
-    </div>
+<section class="contact light-band" id="contact" aria-labelledby="contact-heading">
+<div class="wrap section">
+<div class="section-label mono">
+<span>05 / THE NEXT GOOD THING</span>
+<span>STARTS WITH A CONVERSATION</span>
+</div>
+<div class="contact-grid">
+<div>
+<p class="availability mono">
+<span aria-hidden="true">
+</span> OPEN TO WHAT’S NEXT</p>
+<h2 id="contact-heading">Have something<br>
+<em>in mind?</em>
+</h2>
+<p>A project, an opportunity, or an idea worth exploring.<br>I’d love to hear about it.</p>
+<a class="email-link" href="mailto:bausasrheyven@gmail.com">bausasrheyven@gmail.com <span aria-hidden="true">↗</span>
+</a>
+<a class="text-link" href="https://github.com/Rheyven007" target="_blank" rel="noopener noreferrer">GitHub / Rheyven007 ↗</a>
+</div>
+<form class="contact-form">
+<span class="mono">LEAVE A LITTLE INTRODUCTION</span>
+<label>Your name<input name="name" autocomplete="name" placeholder="What should I call you?" required>
+</label>
+<label>Email address<input type="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+</label>
+<label>What’s on your mind?<textarea name="message" rows="3" placeholder="Tell me about your idea…" required>
+</textarea>
+</label>
+<div class="form-action">
+<button class="button" type="submit">Let’s talk <span aria-hidden="true">↗</span>
+</button>
+<p>Opens your email app<br>with your message ready.</p>
+</div>
+</form>
+</div>
+</div>
 </section>
 </main>
-
-<div class="lightbox" id="lightbox" aria-hidden="true">
-    <button class="lightbox-close" type="button" aria-label="Close project preview"><i data-lucide="x"></i></button>
-    <button class="lightbox-prev" type="button" aria-label="Previous project"><i data-lucide="arrow-left"></i></button>
-    <button class="lightbox-next" type="button" aria-label="Next project"><i data-lucide="arrow-right"></i></button>
-    <div class="lightbox-content">
-        <div class="lightbox-image"><img src="" alt=""></div>
-        <div class="lightbox-copy">
-            <span class="eyebrow" id="lightbox-category"></span>
-            <h2 id="lightbox-title"></h2>
-            <p id="lightbox-description"></p>
-        </div>
-    </div>
-</div>
-
-<footer class="site-footer">
-    <div class="footer-top">
-        <a class="footer-mark" href="#top" aria-label="Back to top"><img data-rb-logo src="assets/images/rb-logo.svg" alt="RB logo"><span>RHEYVEN BAUSAS<small>THOUGHTFUL DIGITAL WORK.</small></span></a>
-        <div class="footer-socials">
-                            <a href="https://github.com/Rheyven007" target="_blank" rel="noopener noreferrer">GitHub</a>
-                            
-
-                            <a href="mailto:bausasrheyven@gmail.com">Email</a>
-                    </div>
-    </div>
-    <div class="footer-bottom">
-        <span>© 2026 RHEYVEN BAUSAS</span>
-        <button class="back-top" type="button">Back to top <i data-lucide="arrow-up"></i></button>
-        <span>All rights reserved</span>
-    </div>
+<footer class="footer wrap">
+<a class="brand" href="#top" aria-label="Rheyven Bausas home">
+<img src="assets/images/rb-logo-dark.svg" alt="RB" width="48" height="44">
+<span>THOUGHTFUL<br>DIGITAL WORK.</span>
+</a>
+<span class="mono">© 2026 RHEYVEN BAUSAS</span>
+<a class="mono" href="#top">BACK TO TOP ↑</a>
 </footer>
-
-<script src="assets/js/script.js"></script>
-<script src="assets/js/brand-motion.js"></script>
-<script>if (window.lucide) lucide.createIcons();</script>
+<dialog class="preview-dialog" aria-labelledby="preview-title">
+<div class="dialog-bar">
+<h2 class="mono" id="preview-title">Project preview</h2>
+<button class="close-preview" type="button" aria-label="Close screenshot preview">Close ×</button>
+</div>
+<img class="dialog-image" alt="">
+</dialog>
 </body>
 </html>
